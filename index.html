@@ -276,15 +276,27 @@
     pointer-events:none;
   }
   .kural-box{
-    max-width:900px;margin:0 auto;text-align:center;position:relative;z-index:1;
+    max-width:780px;margin:0 auto;text-align:center;position:relative;z-index:1;
+  }
+  .kural-box .kural-tamil-wrap{
+    display:flex;justify-content:center;
   }
   .kural-tamil{
     font-family:'Catamaran',sans-serif;
     font-weight:700;
-    font-size:clamp(1.5rem,3vw,2.1rem);
-    line-height:1.6;
+    line-height:1.7;
     color:var(--gold);
     margin-bottom:.7em;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .kural-line{
+    white-space:nowrap;
+    font-size:clamp(0.8rem,4.1vw,2.1rem);
+  }
+  @media (min-width:780px){
+    .kural-line{font-size:2.1rem;}
   }
   .kural-meaning{
     font-style:italic;font-size:1.05rem;color:#f1e3d8;max-width:560px;margin:0 auto 1.4em;
@@ -571,7 +583,9 @@
   <section id="philosophy" class="kural-section">
     <div class="wrap kural-box reveal">
       <span class="eyebrow" style="color:var(--rose)">Our Guiding Thought</span>
-      <p class="kural-tamil" lang="ta">எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள்<br>மெய்ப்பொருள் காண்ப தறிவு</p>
+      <div class="kural-tamil-wrap">
+        <p class="kural-tamil" lang="ta"><span class="kural-line">எப்பொருள் யார்யார்வாய்க் கேட்பினும் அப்பொருள்</span><span class="kural-line">மெய்ப்பொருள் காண்ப தறிவு</span></p>
+      </div>
       <p class="kural-meaning">"Wisdom is recognising the true worth of a thing, no matter who points it out, or how it is said."</p>
       <span class="kural-source">— Thirukkural, Verse 423</span>
       <p class="kural-note">We carry this thought into every gown that comes to us — whether it is a fresh roll of fabric, a half-finished piece from another tailor, or a gown with its stones scattered. We look past the state it arrives in, and work towards the gown it is truly meant to be.</p>
